@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Facebook</title>
+    <style>
+        /* CSS untuk keseluruhan halaman */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Container login */
+        .login-container {
+            width: 350px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Logo dan heading */
+        .login-container h1 {
+            color: #1877f2;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .login-container p {
+            color: #606770;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        /* Input dan tombol */
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1877f2;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background-color: #155cbb;
+        }
+
+        /* Tautan */
+        .login-container a {
+            display: block;
+            color: #1877f2;
+            text-decoration: none;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Facebook</h1>
+        <p>Masuk ke Facebook untuk terhubung dengan teman Anda</p>
+        <form method="POST" action="/login">
+            <input type="text" name="username" placeholder="Email atau Nomor Telepon" required>
+            <input type="password" name="password" placeholder="Kata Sandi" required>
+            <button type="submit">Masuk</button>
+        </form>
+        <a href="#" onclick="showError()">Lupa Kata Sandi?</a>
+        <hr>
+        <a href="#">Buat Akun Baru</a>
+    </div>
+
+    <script>
+        function showError() {
+            console.log('eror');
+        }
+    </script>
+</body>
+</html>
